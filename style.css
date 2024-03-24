@@ -69,76 +69,39 @@ footer {
     margin-top: 20px; /* Adds space above the footer */
 }
 
-@media only screen and (min-width: 390px) {
-    /* Styles for iPhone 14 in portrait */
-    /* ... */
-}
-
-@media only screen and (min-width: 390px) and (orientation: landscape) {
-    /* Styles for iPhone 14 in landscape */
-    /* ... */
-}
-
-@media only screen and (min-width: 844px) and (orientation: portrait) {
-    /* Styles for iPhone 14 Max in portrait */
-    /* ... */
-}
-
-@media only screen and (-webkit-min-device-pixel-ratio: 3), 
-       only screen and (min--moz-device-pixel-ratio: 3), 
-       only screen and (-o-min-device-pixel-ratio: 3/1), 
-       only screen and (min-device-pixel-ratio: 3) {
-    /* Styles for devices with high-density screens like iPhone 14 (Plus/Pro/Pro Max) */
-    /* ... */
-}
-
-/* Other media queries for responsiveness */
-@media only screen and (max-width: 414px) {
-    /* Styles for smartphones (like older iPhones) in portrait */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    /* Adjustments for tablets and small desktops */
     .ascii-art {
-        font-size: 8px;
+        font-size: 14px;
     }
 
-    .contact-info, .update-box {
-        float: none;
-        width: auto;
-        margin-right: 0;
-        margin-bottom: 20px;
-    }
-
+    .contact-info,
     .update-box {
-        padding: 15px;
-        margin: 20px 0;
+        width: 100%;
     }
 
     h1 {
         font-size: 20px;
     }
+}
 
-    h3 {
+@media only screen and (min-width: 1025px) {
+    /* Adjustments for large desktops */
+    .ascii-art {
         font-size: 16px;
     }
-}
 
-@media only screen and (min-width: 415px) and (max-width: 768px) {
-    /* Styles for tablets in both orientations */
-    .ascii-art {
-        font-size: 10px;
-    }
-
-    .contact-info, .update-box {
-        float: none;
-        width: auto;
-        margin-right: 0;
-        padding: 15px;
+    .contact-info,
+    .update-box {
+        width: 50%;
     }
 }
 
-@media only screen and (min-width: 769px) {
-    /* Styles for larger tablets and small desktops */
-    .ascii-art {
-        font-size: 12px;
+/* iPhone 14 specific adjustments */
+@media only screen and (min-width: 390px) and (max-width: 844px) {
+    .ascii-art, h1, .contact-info, .update-box {
+        /* Adjust the size and layout specifically for iPhone 14 */
+        font-size: adjust as needed;
+        /* Add additional styles as needed */
     }
-    
-    /* ... additional styles for larger devices ... */
 }
