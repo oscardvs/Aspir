@@ -43,12 +43,8 @@ h3 {
     padding: 15px;
     margin: 20px 5%; /* Adds space from the right side of the window and top margin for spacing */
     float: right;
-    width: 30%;
+    width: 40%;
     text-align: left; /* Adjusts width to prevent overlap with contact info */
-}
-
-.update-title, .update-date, .update-intro, .update-link {
-    text-align: left; /* Ensures all child elements inside the update box are also aligned left */
 }
 
 .update-entry {
@@ -67,4 +63,14 @@ footer {
     color: white;
     padding: 1em 0;
     margin-top: 20px; /* Adds space above the footer */
+}
+
+@media (max-width: 600px) {
+    /* Adjustments for small screens */
+    .contact-info, .update-box {
+        float: none;
+        width: auto;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
