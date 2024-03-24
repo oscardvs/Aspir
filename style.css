@@ -32,25 +32,38 @@ h3 {
 
 .contact-info {
     text-align: left;
-    margin-left: 5%; /* Adds space from the left side of the window */
+    width: 50%;
+    margin-left: 2.5%;
     float: left;
-    width: 40%; /* Adjusts width to prevent overlap with updates box */
+}
+
+.whitepaper_block {
+    text-align: left;
+    width: 50%;
+    margin-left: 2.5%;
+    float: left;
+}
+
+.whitepaper_nonblock {
+    text-align: left;
+    width: 95%;
+    margin-left: 2.5%;
+    float: left;    
 }
 
 .update-box {
-    background-color: #222;
-    color: white;
-    padding: 15px;
-    margin: 20px 5%; /* Adds space from the right side of the window and top margin for spacing */
+    width: 35%;
     float: right;
-    width: 40%;
-    text-align: left; /* Adjusts width to prevent overlap with contact info */
+    background-color: #222;
+    padding: 15px;
+    margin-right: 2.5%;
+    text-align: left;
 }
 
 .update-entry {
     border-bottom: 1px solid #555;
-    margin-bottom: 20px; /* Separation between update entries */
-    padding-bottom: 20px; /* Padding below each update for spacing */
+    margin-bottom: 10px; /* Separation between update entries */
+    padding-bottom: 10px; /* Padding below each update for spacing */
 }
 
 .update-entry:last-of-type {
@@ -61,16 +74,26 @@ footer {
     clear: both; /* Clears the floating elements */
     background-color: #333;
     color: white;
+    text-align: center;
     padding: 1em 0;
-    margin-top: 20px; /* Adds space above the footer */
 }
 
 @media (max-width: 600px) {
-    /* Adjustments for small screens */
-    .contact-info, .update-box {
+    .contact-info, .whitepaper, .update-box {
         float: none;
         width: auto;
-        margin-left: 5%;
-        margin-right: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: justify;
+    }
+    .whitepaper {
+        order: 3;
+    }
+    .update-box {
+        order: 2;
+        margin-top: 0;
+    }
+    .contact-info {
+        order: 1;
     }
 }
