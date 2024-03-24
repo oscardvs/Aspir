@@ -69,44 +69,46 @@ footer {
     margin-top: 20px; /* Adds space above the footer */
 }
 
-/* Base styles */
-/* ... Your existing CSS ... */
-
-/* Smartphones (portrait and landscape) - very small screens */
-@media only screen and (min-width: 320px) and (max-width: 480px) {
-    .ascii-art {
-        font-size: 0.4em; /* Reduce the size of the ASCII art further */
-        overflow-x: auto; /* Ensures any overflow content is scrollable */
-    }
-
-    h1 {
-        font-size: 1em; /* Reduce main title font size */
-    }
-
-    .contact-info, .update-box {
-        width: 100%; /* Full width for small screens */
-        padding: 10px;
-        box-sizing: border-box; /* Include padding in width calculation */
-    }
-
-    .update-entry {
-        font-size: 0.7em; /* Reduce update entry font size */
-    }
-}
-
-/* Smartphones (landscape) - small screens */
-@media only screen and (min-width: 481px) and (max-width: 767px) {
-    .ascii-art {
-        font-size: 0.6em; /* Slightly larger ASCII art for landscape */
-    }
-
-    /* The rest is similar to portrait smartphones */
+@media only screen and (min-width: 390px) {
+    /* Styles for iPhone 14 in portrait */
     /* ... */
 }
 
+@media only screen and (min-width: 390px) and (orientation: landscape) {
+    /* Styles for iPhone 14 in landscape */
+    /* ... */
+}
+
+@media only screen and (min-width: 844px) and (orientation: portrait) {
+    /* Styles for iPhone 14 Max in portrait */
+    /* ... */
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 3), 
+       only screen and (min--moz-device-pixel-ratio: 3), 
+       only screen and (-o-min-device-pixel-ratio: 3/1), 
+       only screen and (min-device-pixel-ratio: 3) {
+    /* Styles for devices with high-density screens like iPhone 14 (Plus/Pro/Pro Max) */
+    /* ... */
+}
+
+/* Other media queries for responsiveness */
 @media only screen and (max-width: 414px) {
+    /* Styles for smartphones (like older iPhones) in portrait */
     .ascii-art {
-        font-size: 10px; /* Reduce font size to fit smaller screens */
+        font-size: 8px;
+    }
+
+    .contact-info, .update-box {
+        float: none;
+        width: auto;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .update-box {
+        padding: 15px;
+        margin: 20px 0;
     }
 
     h1 {
@@ -116,57 +118,27 @@ footer {
     h3 {
         font-size: 16px;
     }
+}
 
-    /* Stack .contact-info and .update-box on top of each other */
+@media only screen and (min-width: 415px) and (max-width: 768px) {
+    /* Styles for tablets in both orientations */
+    .ascii-art {
+        font-size: 10px;
+    }
+
     .contact-info, .update-box {
-        width: 100%;
         float: none;
+        width: auto;
+        margin-right: 0;
+        padding: 15px;
     }
-
-    /* Additional adjustments for small screens can be added here */
 }
 
-/* Tablets (portrait and landscape) - medium screens */
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 769px) {
+    /* Styles for larger tablets and small desktops */
     .ascii-art {
-        font-size: 0.8em; /* Larger ASCII art for tablets */
+        font-size: 12px;
     }
-
-    .contact-info, .update-box {
-        width: 50%; /* Half width for medium screens */
-        padding: 10px;
-        box-sizing: border-box;
-    }
-
-    /* Additional tablet-specific styles */
-}
-
-/* Laptops and desktops - large screens */
-@media only screen and (min-width: 1025px) {
-    .ascii-art {
-        font-size: 1em; /* Default size for larger screens */
-    }
-
-    .contact-info, .update-box {
-        width: 45%; /* Adjust width for larger but not the largest screens */
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-
-    /* Additional laptop/desktop specific styles */
-}
-
-/* Large screens - very large screens */
-@media only screen and (min-width: 1201px) {
-    .ascii-art {
-        font-size: 1em; /* Keep default size for very large screens */
-    }
-
-    .contact-info, .update-box {
-        width: 40%; /* Optimal width for very large screens */
-        margin-left: 2.5%;
-        margin-right: 2.5%;
-    }
-
-    /* Additional large screen specific styles */
+    
+    /* ... additional styles for larger devices ... */
 }
