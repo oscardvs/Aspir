@@ -104,6 +104,28 @@ footer {
     /* ... */
 }
 
+@media only screen and (max-width: 414px) {
+    .ascii-art {
+        font-size: 10px; /* Reduce font size to fit smaller screens */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    /* Stack .contact-info and .update-box on top of each other */
+    .contact-info, .update-box {
+        width: 100%;
+        float: none;
+    }
+
+    /* Additional adjustments for small screens can be added here */
+}
+
 /* Tablets (portrait and landscape) - medium screens */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
     .ascii-art {
