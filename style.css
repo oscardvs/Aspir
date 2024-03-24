@@ -1,0 +1,132 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    text-align: center; /* Centering the ascii art */
+}
+
+.ascii-art {
+    white-space: pre;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1;
+    display: block; /* Ensures ascii art is block-level for margin auto */
+    margin: 20px auto; /* Adds top and bottom margin, centers horizontally */
+}
+
+h1, h3 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    font-weight: bold;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.contact-info {
+    text-align: left;
+    margin-left: 5%; /* Adds space from the left side of the window */
+    float: left;
+    width: 40%; /* Adjusts width to prevent overlap with updates box */
+}
+
+.update-box {
+    background-color: #222;
+    color: white;
+    padding: 15px;
+    margin: 20px 5%; /* Adds space from the right side of the window and top margin for spacing */
+    float: right;
+    width: 30%;
+    text-align: left; /* Adjusts width to prevent overlap with contact info */
+}
+
+.update-title, .update-date, .update-intro, .update-link {
+    text-align: left; /* Ensures all child elements inside the update box are also aligned left */
+}
+
+.update-entry {
+    border-bottom: 1px solid #555;
+    margin-bottom: 20px; /* Separation between update entries */
+    padding-bottom: 20px; /* Padding below each update for spacing */
+}
+
+.update-entry:last-of-type {
+    border-bottom: none; /* No border for the last entry */
+}
+
+footer {
+    clear: both; /* Clears the floating elements */
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+    .contact-info,
+    .update-box {
+        width: 90%; /* Full width with some margin */
+        margin: 10px auto; /* Centered with automatic margins */
+        float: none;
+    }
+
+    h1, h3 {
+        font-size: 1em; /* Smaller font size for small devices */
+    }
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+    .contact-info,
+    .update-box {
+        /* Adjust the styles for landscape orientation */
+        width: 90%;
+        margin: 10px auto;
+        float: none;
+    }
+
+    /* Adjust the font sizes if necessary */
+}
+
+/* Tablets (portrait and landscape) ----------- */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .contact-info,
+    .update-box {
+        /* Adjust the styles for tablets */
+        width: 80%;
+        margin: 10px auto;
+        float: none;
+    }
+
+    /* Adjust the font sizes if necessary */
+}
+
+/* Laptops and desktops ----------- */
+@media only screen and (min-width: 1025px) {
+    .contact-info,
+    .update-box {
+        /* Styles for larger devices */
+        width: 45%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width: 1201px) {
+    .contact-info,
+    .update-box {
+        width: 30%;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+    }
+}
+
