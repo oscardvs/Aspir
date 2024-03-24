@@ -69,64 +69,82 @@ footer {
     margin-top: 20px; /* Adds space above the footer */
 }
 
-/* Smartphones (portrait and landscape) ----------- */
+/* Base styles */
+/* ... Your existing CSS ... */
+
+/* Smartphones (portrait and landscape) - very small screens */
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-    .contact-info,
-    .update-box {
-        width: 90%; /* Full width with some margin */
-        margin: 10px auto; /* Centered with automatic margins */
-        float: none;
+    .ascii-art {
+        font-size: 0.4em; /* Reduce the size of the ASCII art further */
+        overflow-x: auto; /* Ensures any overflow content is scrollable */
     }
 
-    h1, h3 {
-        font-size: 1em; /* Smaller font size for small devices */
+    h1 {
+        font-size: 1em; /* Reduce main title font size */
+    }
+
+    .contact-info, .update-box {
+        width: 100%; /* Full width for small screens */
+        padding: 10px;
+        box-sizing: border-box; /* Include padding in width calculation */
+    }
+
+    .update-entry {
+        font-size: 0.7em; /* Reduce update entry font size */
     }
 }
 
-/* Smartphones (landscape) ----------- */
+/* Smartphones (landscape) - small screens */
 @media only screen and (min-width: 481px) and (max-width: 767px) {
-    .contact-info,
-    .update-box {
-        /* Adjust the styles for landscape orientation */
-        width: 90%;
-        margin: 10px auto;
-        float: none;
+    .ascii-art {
+        font-size: 0.6em; /* Slightly larger ASCII art for landscape */
     }
 
-    /* Adjust the font sizes if necessary */
+    /* The rest is similar to portrait smartphones */
+    /* ... */
 }
 
-/* Tablets (portrait and landscape) ----------- */
+/* Tablets (portrait and landscape) - medium screens */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
-    .contact-info,
-    .update-box {
-        /* Adjust the styles for tablets */
-        width: 80%;
-        margin: 10px auto;
-        float: none;
+    .ascii-art {
+        font-size: 0.8em; /* Larger ASCII art for tablets */
     }
 
-    /* Adjust the font sizes if necessary */
+    .contact-info, .update-box {
+        width: 50%; /* Half width for medium screens */
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    /* Additional tablet-specific styles */
 }
 
-/* Laptops and desktops ----------- */
+/* Laptops and desktops - large screens */
 @media only screen and (min-width: 1025px) {
-    .contact-info,
-    .update-box {
-        /* Styles for larger devices */
-        width: 45%;
+    .ascii-art {
+        font-size: 1em; /* Default size for larger screens */
+    }
+
+    .contact-info, .update-box {
+        width: 45%; /* Adjust width for larger but not the largest screens */
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
+
+    /* Additional laptop/desktop specific styles */
 }
 
-/* Large screens ----------- */
+/* Large screens - very large screens */
 @media only screen and (min-width: 1201px) {
-    .contact-info,
-    .update-box {
-        width: 30%;
+    .ascii-art {
+        font-size: 1em; /* Keep default size for very large screens */
+    }
+
+    .contact-info, .update-box {
+        width: 40%; /* Optimal width for very large screens */
         margin-left: 2.5%;
         margin-right: 2.5%;
     }
-}
 
+    /* Additional large screen specific styles */
+}
