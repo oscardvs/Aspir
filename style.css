@@ -78,22 +78,54 @@ footer {
     padding: 1em 0;
 }
 
-@media (max-width: 600px) {
-    .contact-info, .whitepaper, .update-box {
-        float: none;
-        width: auto;
-        padding-left: 5%;
-        padding-right: 5%;
-        text-align: justify;
+/* Media Queries */
+/* iPhone X (portrait and landscape) */
+@media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
+    /* Styles */
+    .title_big img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        height: auto;
     }
-    .whitepaper {
-        order: 3;
-    }
-    .update-box {
-        order: 2;
-        margin-top: 0;
-    }
-    .contact-info {
-        order: 1;
-    }
+}
+
+/* iPad (portrait and landscape) */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    /* Styles */
+}
+
+/* iPhone 8, 7, 6s, 6 (portrait and landscape) */
+@media only screen and (min-device-width : 375px) and (max-device-width : 667px) {
+    /* Styles */
+}
+
+/* iPhone 8 Plus, 7 Plus, 6s Plus, 6 Plus (portrait and landscape) */
+@media only screen and (min-device-width : 414px) and (max-device-width : 736px) {
+    /* Styles */
+}
+
+/* iPhone 5S, SE (portrait and landscape) */
+@media only screen and (min-device-width : 320px) and (max-device-width : 568px) {
+    /* Styles */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+    /* Styles */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    /* Styles */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    /* Styles */
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    /* Styles */
 }
