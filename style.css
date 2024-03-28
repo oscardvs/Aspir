@@ -85,6 +85,27 @@ footer {
     padding: 1em 0;
 }
 
+/* Initially show the loading animation */
+#loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: white;
+    font-family: sans-serif;
+    animation: flash 1s ease-in-out infinite;
+}
+
+/* Hide the loading animation after it's done */
+.hide-loading {
+    display: none;
+}
+
+@keyframes flash {
+    0%, 100% { opacity: 0; font-size: 20px; }
+    50% { opacity: 1; font-size: 40px; }
+}
+
 /* Media Queries */
 /* iPhone X (portrait and landscape) */
 @media only screen and (min-device-width : 375px) and (max-device-width : 812px) {
@@ -92,8 +113,16 @@ footer {
     .title_big img {
         display: block;
         margin: 1 auto;
-        max-width: 50%;
+        max-width: 100%;
         height: auto;
+    }
+
+    footer {
+        clear: both; /* Clears the floating elements */
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 2em 0;
     }
 }
 
