@@ -1,0 +1,70 @@
+/* Flashing background setup */
+@keyframes flashing {
+    0%, 100% { background-color: white; }
+    50% { background-color: black; }
+}
+
+.flashing-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 2em;
+    animation: flashing 3s;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Loader Styles */
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Your existing loader styles */
+}
+
+/* After the animation is done, the loader and flashing screen should be hidden */
+@keyframes hideLoader {
+    to {
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+
+/* Main content styling */
+#main-content {
+    display: none; /* Hide content by default, show after loader */
+    animation: fadeInContent 3.5s forwards;
+}
+
+@keyframes fadeInContent {
+    to {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* Ensuring the ascii-art is not displayed */
+.ascii-art {
+    display: none;
+}
+
+/* Contact, whitepaper, and update box styles */
+.contact-info, .update-box, .whitepaper_block, .whitepaper_nonblock {
+    margin: 1em;
+    padding: 1em;
+}
+
+
+
+/* Loader pseudo-elements 
+.loader::before,
+.loader::after {
+
+}*/
+
+

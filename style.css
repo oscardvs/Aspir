@@ -5,6 +5,7 @@ body {
     background-color: black;
     color: white;
     text-align: center; /* Centering the ascii art */
+    overflow-x: hidden;
 }
 
 .ascii-art {
@@ -85,26 +86,6 @@ footer {
     padding: 1em 0;
 }
 
-/* Initially show the loading animation */
-#loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: white;
-    font-family: sans-serif;
-    animation: flash 1s ease-in-out infinite;
-}
-
-/* Hide the loading animation after it's done */
-.hide-loading {
-    display: none;
-}
-
-@keyframes flash {
-    0%, 100% { opacity: 0; font-size: 20px; }
-    50% { opacity: 1; font-size: 40px; }
-}
 
 /* Media Queries */
 /* iPhone X (portrait and landscape) */
