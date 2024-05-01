@@ -86,6 +86,14 @@ ul {
 }
 
 p {
+  list-style-type: disc;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #3a3a3a;
+}
+
+ul, li {
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -288,6 +296,14 @@ intro
   text-transform: uppercase;
 }
 
+ul {
+  padding-left: 20px; /* Adds indentation to lists */
+  list-style-type: disc; /* Ensures bullets are shown */
+}
+
+li {
+  margin-bottom: 10px; /* Adds space between list items */
+}
 
 /* 
 ---------------------------------------------
